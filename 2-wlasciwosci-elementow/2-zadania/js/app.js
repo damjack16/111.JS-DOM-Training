@@ -8,3 +8,14 @@ firstLi.setAttribute('class', 'first');
 const lastLi = ulList.querySelector('li:last-child');
 lastLi.setAttribute('class', 'last');
 // 4
+const thirdLi = ulList.querySelector('li:nth-of-type(3)');
+thirdLi.setAttribute('class', 'active');
+// 5
+thirdLi.style.color = "#fff"
+// 6
+const aList = document.querySelectorAll('li a');
+aList.forEach(a => {
+    a.setAttribute('title', `Przejdź na stronę ${a.textContent}`);
+    // 7
+    a.setAttribute('href', '#');
+})
